@@ -7,20 +7,12 @@
 
 
 import CardHolder from '@/components/CardHolder.vue'
-
+import decks from '@/decks.json'
 
 export default {
   data(){
         return{
-          deck:[
-            {prompt:"ahám", answer:"I", right:0, wrong:0},
-            {prompt:"tvám", answer:"you (singular)", right:0, wrong:0},
-            {prompt:"sá", answer:"he", right:0, wrong:0},
-            {prompt:"vayám", answer:"we", right:0, wrong:0},
-            {prompt:"yūyám", answer:"you (plural)", right:0, wrong:0},
-            {prompt:"té", answer:"they", right:0, wrong:0},
-            {prompt:"idám", answer:"this", right:0, wrong:0},
-            {prompt:"tát", answer:"that", right:0, wrong:0}, ]
+          deck:decks["sanskrit"]
         }
       },
   components:{CardHolder},
